@@ -1,8 +1,8 @@
 package com.hjx.cloudproviderpayment8001.controller;
 
-import com.hjx.cloudproviderpayment8001.entities.CommonResult;
-import com.hjx.cloudproviderpayment8001.entities.Payment;
 import com.hjx.cloudproviderpayment8001.service.PaymentService;
+import com.hjx.springCloud.entities.CommonResult;
+import com.hjx.springCloud.entities.Payment;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -22,7 +22,7 @@ public class PayMentController {
     private PaymentService paymentService;
 
     @PostMapping("/create")
-    public CommonResult create(Payment payment){
+    public CommonResult create(@RequestBody Payment payment){
         int i = paymentService.create(payment);
         log.info("*********结果"+i);
         if (0<i){

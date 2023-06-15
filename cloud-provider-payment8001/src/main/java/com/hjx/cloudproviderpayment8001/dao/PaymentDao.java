@@ -1,6 +1,6 @@
 package com.hjx.cloudproviderpayment8001.dao;
 
-import com.hjx.cloudproviderpayment8001.entities.Payment;
+import com.hjx.springCloud.entities.Payment;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

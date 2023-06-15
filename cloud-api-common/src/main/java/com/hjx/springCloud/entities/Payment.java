@@ -1,4 +1,4 @@
-package com.hjx.cloudproviderpayment8001.entities;
+package com.hjx.springCloud.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
