@@ -1,6 +1,6 @@
-package com.hjx.cloudproviderpayment8001.controller;
+package com.hjx.cloudproviderpayment8002.controller;
 
-import com.hjx.cloudproviderpayment8001.service.PaymentService;
+import com.hjx.cloudproviderpayment8002.service.PaymentService;
 import com.hjx.springCloud.entities.CommonResult;
 import com.hjx.springCloud.entities.Payment;
 import lombok.extern.slf4j.Slf4j;
@@ -22,7 +22,6 @@ public class PayMentController {
     private PaymentService paymentService;
     @Value("${server.port}")
     private String port;
-
     @PostMapping("/create")
     public CommonResult create(@RequestBody Payment payment){
         int i = paymentService.create(payment);
@@ -40,7 +39,7 @@ public class PayMentController {
         log.info("*********结果"+payMentById+"************");
         if (null==payMentById){
 
-            return new CommonResult(444,"fail,port"+ port,null);
+            return new CommonResult(444,"fail,port"+port,null);
         }else {
             return new CommonResult(200,"success,port"+port,payMentById);
         }
