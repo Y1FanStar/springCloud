@@ -14,6 +14,10 @@
         <module>cloud-consumerZk-order80</module>
         <module>cloud-provider-payment8003</module>
         <module>cloud-consumer-fegin-order80</module>
+        <module>cloud-service-gateway9527</module>
+        <module>cloud-alibaba-provider-payment9001</module>
+        <module>cloud-alibaba-nacos-consumer-order83</module>
+        <module>cloud-alibabab-nacos-config-client3377</module>
     </modules>
 
     <groupId>com.hjx</groupId>
